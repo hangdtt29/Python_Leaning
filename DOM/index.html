@@ -1,0 +1,101 @@
+<html>
+
+<head>
+
+    <title>WellcomeHN</title>
+    <style>
+        p {
+            text-align: justify;
+        }
+
+        body {
+
+            margin-inline-start: 350px;
+            margin-inline-end: 350px;
+        }
+
+        #menu li {
+
+            list-style: none;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .list {
+            display: inline-block;
+            margin-right: 10px;
+            padding: 8px 12px;
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: inherit;
+            background-color: plum;
+            border: 3px solid #fff;
+            border-radius: 5px;
+            transition: 0.3s all ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;"> Khám phá mùa thu Hà Nội </h1>
+    <div id="menu">
+        <ul style="padding-left: 0px; text-justify: auto;">
+            <li><a style="padding-right: 50px ;" href="index.html">Created by Nắng</a></li>
+            <li><a style="text-align:right; color: grey;">Tạo vào ngày: 30/8/2021</a></li>
+        </ul>
+    </div>
+
+
+
+    <h3>I. Thời tiết Hà Nội khi vào thu <br />
+    </h3>
+    <h4><em>Thủ đô Hà Nội lãng mạn sang thu</em></h4>
+    <p id = "page1">Thời tiết Hà Nội có 4 mùa trong năm nhưng mùa thu là mùa
+        thích hợp nhất để đi du lịch tại Hà Nội
+        bởi vì mùa thu Hà Nội có không khí dễ chịu mát mẻ khác hẳn với mùa xuân ẩm ướt
+        bởi những cơn mưa phùn dai dẳng, mùa đông với cái lạnh cắt da cắt thịt hay mùa hè oi bức, nóng nực.
+        Trời Hà Nội se se lạnh, những cơn gió mát lạnh thổi khắp phố phường,
+        là thời điểm thích hợp để mọi người có thể thong dong dạo bộ dọc hồ Tây lộng gió
+        hay ngồi tận hưởng không khí trong lành của hồ Gươm buổi sớm mai
+        còn phảng phất mùi hương nồng nàn của hoa sữa…</p><br /><br />
+    <img style="align-self: center;" src="muathu.jpg" alt="Mua thu cho em">
+    <h4><em>Hương hoa sữa, cốm phảng phất</em></h4>
+    <p id = "page2">Một trong nhiều lý do khiến du khách luôn muốn đi du lịch Hà Nội mùa thu đó là vào
+        dịp này Hà Nội
+        dường như được ướp trong hương vị nồng nàn của hoa sữa. Một trong những “đặc sản” của mùa thu Hà Nội
+        chính là hương hoa sữa bay dọc khắp phố phường.
+        Thứ hương thơm khi thì thoang thoảng khi lại ngào ngạt cộng với tiết trời dịu nhẹ của thu Hà Nội
+        làm cho du khách càng thêm vấn vương. Đến với Hà Nội dịp này du khách không nên bỏ qua trải nghiệm
+        lang thang trên những con đường đầy thứ hương hoa quyến rũ này như phố Bà Triệu, Quang Trung, Nguyễn Tri
+        Phương,…</p>
+    <h3>II. Đặc sản Hà Nội mùa thu</h3>
+    <h4><em>Các món ăn ngon mùa thu Hà Nội</em></h4>
+    <img src="com.jpg" alt="Cốm">
+    <ol>
+        <li>Cốm làng Vòng</li>
+        <li>Sấu chín dầm</li>
+        <li>Bánh chả...</li>
+    </ol>
+    <p id ="page3">Cốm làng Vòng từ lâu đã trở thành một trong những thức quà đặc trưng cho
+        ẩm thực mùa thu của Hà Nội. Dù hiện nay đã xuất hiện quanh năm,
+        nhưng cốm ngon nhất khi được thưởng thức trong những ngày thu dịu mát.
+        Từ đầu thu, các bà, các mẹ đã quảy đôi quang gánh đựng đầy cốm non đi khắp phố phường Hà Nội.</p>
+    <div class="change-selection">
+        <a href="#" class="list" onclick="changePageColor()">ChangeColor</a>
+        <a href="#" class="list" onclick="changeBgColor('red')">ChangeBgColor</a>
+        <a href="#" class="list" onclick="copyContent('page1','page2')">CopyContent</a>
+        <a href="#" class="list" onclick="changeFontSize(20)">ChangeSize</a>
+        <a href="#" class="list" onclick="increaseFontSize('page1')">Increase1Size</a>
+        <a href="#" class="list" onclick="decreaseFontSize('page3')">Decrease1Size</a>
+
+
+    </div>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
+
+</html>
