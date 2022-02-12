@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Resignation_Letter</title>
+        <!-- Liên kết đến các file khác như css, hình ảnh, ... trong thư mục static -->
+        <link
+            rel="stylesheet"
+            href="{{url_for('static', filename='style.css')}}"
+        />
+    </head>
+    <body>
+        <h1>Blogs Page</h1>
+
+        <nav>
+            <ul>
+                <li >
+                    <a href="/" class="menu-link">Blogs</a>
+                </li>
+                <li>
+                    <a href="/about" class="menu-link">About</a>
+                </li>
+                <li>
+                    <a href="/resignation-letter" class="menu-link">Resignation Letter</a>
+                </li>
+            </ul>
+        </nav>
+        <h2 class="section-header">Resignation Letter</h2>
+        <form action="/resignation-letter" method="POST">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name"><br>
+            <label for="phone">Phone Number</label><br>
+            <input type="text" id="phone" name="phone"><br><br>
+            <label for="reason">Reason</label><br>
+            <input type="text" id="reason" name="reason"><br><br>
+            <button type="submit">Register</button>
+        </form>
+        {% if file_created %}
+            <p>File created</p>
+            <a href="static/resignation.docx" download="resignation.docx">Download</a></p>
+        {% endif %}
+        
+</body>
+</html>
+        </div>
+
+    </body>
+</html>

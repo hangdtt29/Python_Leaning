@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ post["title"] }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    {% if not post %}
+    <p>Khong co bai post nay</p>
+    {% else %}
+    <h1>Thông tin chi tiết</h1>
+
+    <form action="/posts/{{post['post_id']}}" method="POST">
+        <label for="title">Title</label><br>
+        <input type="text" id="title" name="title" value="{{ post['title']}}"><br><br>
+        <label for="content">Content</label><br>
+        <input type="text" id="content" name="content" value="{{ post['content']}}"><br><br>
+        <button type="submit">Update post</button>
+    </form>
+    {% endif %}
+</body>
+</html>
